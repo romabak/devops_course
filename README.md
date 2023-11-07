@@ -38,72 +38,78 @@
 Python includes a wide range of built-in functions that provide essential tools for various programming tasks. In this section, we'll introduce some of the most commonly used built-in functions and demonstrate how to use them effectively.
 
 - **`print()`:**
-   - The `print()` function is used to display output in Python. It allows you to print text, variables, and the results of expressions.
-   - You can specify multiple arguments within the `print()` function to display them in a single line or separate them using separators.
-   - Example of using `print()` to display output:
 
-   ```python
-   print("Hello, World!")
-   ```
+- The `print()` function is used to display output in Python. It allows you to print text, variables, and the results of expressions.
+- You can specify multiple arguments within the `print()` function to display them in a single line or separate them using separators.
+- Example of using `print()` to display output:
+
+```python
+print("Hello, World!")
+```
 
 - **`input()`:**
-   - The `input()` function is used to collect user input. It allows you to prompt the user for information and store their response as a string.
-   - You can customize the input prompt by passing a string as an argument to `input()`.
-   - Example of using `input()` to collect user input:
 
-   ```python
-   user_name = input("Please enter your name: ")
-   print(f"Hello, {user_name}!")
-   ```
+- The `input()` function is used to collect user input. It allows you to prompt the user for information and store their response as a string.
+- You can customize the input prompt by passing a string as an argument to `input()`.
+- Example of using `input()` to collect user input:
+
+```python
+user_name = input("Please enter your name: ")
+print(f"Hello, {user_name}!")
+```
 
 - **`type()`:**
-   - The `type()` function is used to determine the data type of a value or variable. It helps you check whether a value is an integer, float, string, or another data type.
-   - Example of using `type()` to determine data types:
 
-   ```python
-   value = 42
-   print(type(value))  # Output: <class 'int'>
-   ```
+- The `type()` function is used to determine the data type of a value or variable. It helps you check whether a value is an integer, float, string, or another data type.
+- Example of using `type()` to determine data types:
+
+```python
+value = 42
+print(type(value))  # Output: <class 'int'>
+```
 
 - **`sys.argv`:**
-   - `sys.argv` is not a function but a list in Python. It contains the command-line arguments passed to a Python script.
-   - It is part of the `sys` module, so you need to import the `sys` module to access it.
-   - This is particularly useful for scripts that accept command-line arguments, allowing you to customize the script's behavior.
-   - Example of accessing command-line arguments using `sys.argv`:
 
-   ```python
-   import sys
+- `sys.argv` is not a function but a list in Python. It contains the command-line arguments passed to a Python script.
+- It is part of the `sys` module, so you need to import the `sys` module to access it.
+- This is particularly useful for scripts that accept command-line arguments, allowing you to customize the script's behavior.
+- Example of accessing command-line arguments using `sys.argv`:
 
-   if len(sys.argv) > 1:
-       script_name = sys.argv[0]
-       argument = sys.argv[1]
-       print(f"Script name: {script_name}")
-       print(f"Command-line argument: {argument}")
-   else:
-       print("No command-line arguments provided.")
-   ```
+```python
+import sys
+
+if len(sys.argv) > 1:
+    script_name = sys.argv[0]
+    argument = sys.argv[1]
+    print(f"Script name: {script_name}")
+    print(f"Command-line argument: {argument}")
+else:
+    print("No command-line arguments provided.")
+```
 
 - **`del()`:**
-   - The `del` statement is used to remove a reference to an object. It can be used to delete variables or specific elements in data structures.
-   - Be cautious when using `del`, as it permanently removes the reference to the object in memory.
-   - Example of using `del` to delete a variable:
 
-   ```python
-   x = 10
-   print(x)  # Output: 10
-   del x
-   # Now, x is undefined
-   ```
+- The `del` statement is used to remove a reference to an object. It can be used to delete variables or specific elements in data structures.
+- Be cautious when using `del`, as it permanently removes the reference to the object in memory.
+- Example of using `del` to delete a variable:
+
+```python
+x = 10
+print(x)  # Output: 10
+del x
+# Now, x is undefined
+```
 
 - **`range()`:**
-   - The `range()` function is used to generate a sequence of numbers. It is commonly used in loops and iterations.
-   - `range()` can take one, two, or three arguments, specifying the start, stop, and step values of the sequence.
-   - Example of using `range()` to generate a sequence of numbers:
 
-   ```python
-   for i in range(5):
-       print(i)  # Output: 0, 1, 2, 3, 4
-   ```
+- The `range()` function is used to generate a sequence of numbers. It is commonly used in loops and iterations.
+- `range()` can take one, two, or three arguments, specifying the start, stop, and step values of the sequence.
+- Example of using `range()` to generate a sequence of numbers:
+
+```python
+for i in range(5):
+    print(i)  # Output: 0, 1, 2, 3, 4
+```
 
 - **`format()`:**
 
