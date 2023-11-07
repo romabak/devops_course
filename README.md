@@ -106,9 +106,10 @@ Python includes a wide range of built-in functions that provide essential tools 
    ```
 
 - **`format()`:**
-   - The `format()` function is used for string formatting. It allows you to create formatted strings by substituting values into placeholders within a template string.
-   - This is a powerful way to display data in a structured and readable format.
-   - Example of using `format()` for string formatting:
+
+- The `format()` function is used for string formatting. It allows you to create formatted strings by substituting values into placeholders within a template string.
+- This is a powerful way to display data in a structured and readable format.
+- Example of using `format()` for string formatting:
 
    ```python
    name = "Alice"
@@ -120,78 +121,79 @@ Python includes a wide range of built-in functions that provide essential tools 
    ```
 
 - **Additional Built-in Functions:**
-   - Python offers a wide array of built-in functions that cover various tasks. Some other important built-in functions include:
-     - `len()`: Returns the length of an iterable (e.g., string, list, tuple).
-     - `max()`: Returns the largest item in an iterable.
-     - `min()`: Returns the smallest item in an iterable.
-     - `sum()`: Returns the sum of all items in an iterable.
-     - `sorted()`: Returns a sorted list from an iterable.
-     - `abs()`: Returns the absolute value of a number.
-     - `round()`: Rounds a floating-point number to a specified number of decimal places.
-     - `open()`: Used for file input and output.
+
+- Python offers a wide array of built-in functions that cover various tasks. Some other important built-in functions include:
+  - `len()`: Returns the length of an iterable (e.g., string, list, tuple).
+  - `max()`: Returns the largest item in an iterable.
+  - `min()`: Returns the smallest item in an iterable.
+  - `sum()`: Returns the sum of all items in an iterable.
+  - `sorted()`: Returns a sorted list from an iterable.
+  - `abs()`: Returns the absolute value of a number.
+  - `round()`: Rounds a floating-point number to a specified number of decimal places.
+  - `open()`: Used for file input and output.
 
 1. **`len()`:**
-   - The `len()` function is used to determine the length of an iterable (e.g., string, list, tuple).
+    - The `len()` function is used to determine the length of an iterable (e.g., string, list, tuple).
 
-   ```python
-   text = "Hello, Python"
-   length = len(text)
-   print(f"The length of the string is {length}")  # Output: 13
-   ```
+    ```python
+    text = "Hello, Python"
+    length = len(text)
+    print(f"The length of the string is {length}")  # Output: 13
+    ```
 
 2. **`max()`:**
-   - The `max()` function returns the largest item in an iterable.
+    - The `max()` function returns the largest item in an iterable.
 
-   ```python
-   numbers = [10, 20, 5, 30]
-   max_number = max(numbers)
-   print(f"The maximum number is {max_number}")  # Output: 30
-   ```
+    ```python
+    numbers = [10, 20, 5, 30]
+    max_number = max(numbers)
+    print(f"The maximum number is {max_number}")  # Output: 30
+    ```
 
 3. **`min()`:**
-   - The `min()` function returns the smallest item in an iterable.
+    - The `min()` function returns the smallest item in an iterable.
 
-   ```python
-   numbers = [10, 20, 5, 30]
-   min_number = min(numbers)
-   print(f"The minimum number is {min_number}")  # Output: 5
-   ```
+    ```python
+    numbers = [10, 20, 5, 30]
+    min_number = min(numbers)
+    print(f"The minimum number is {min_number}")  # Output: 5
+    ```
 
 4. **`sum()`:**
-   - The `sum()` function returns the sum of all items in an iterable.
+    - The `sum()` function returns the sum of all items in an iterable.
 
-   ```python
-   numbers = [10, 20, 5, 30]
-   total = sum(numbers)
-   print(f"The sum of the numbers is {total}")  # Output: 65
-   ```
+    ```python
+    numbers = [10, 20, 5, 30]
+    total = sum(numbers)
+    print(f"The sum of the numbers is {total}")  # Output: 65
+    ```
 
 5. **`sorted()`:**
-   - The `sorted()` function returns a sorted list from an iterable.
+    - The `sorted()` function returns a sorted list from an iterable.
 
-   ```python
-   numbers = [10, 20, 5, 30]
-   sorted_numbers = sorted(numbers)
-   print(f"Sorted numbers: {sorted_numbers}")  # Output: [5, 10, 20, 30]
-   ```
+    ```python
+    numbers = [10, 20, 5, 30]
+    sorted_numbers = sorted(numbers)
+    print(f"Sorted numbers: {sorted_numbers}")  # Output: [5, 10, 20, 30]
+    ```
 
 6. **`abs()`:**
-   - The `abs()` function returns the absolute value of a number.
+    - The `abs()` function returns the absolute value of a number.
 
-   ```python
-   num = -42
-   absolute_value = abs(num)
-   print(f"The absolute value of {num} is {absolute_value}")  # Output: 42
-   ```
+    ```python
+    num = -42
+    absolute_value = abs(num)
+    print(f"The absolute value of {num} is {absolute_value}")  # Output: 42
+    ```
 
 7. **`round()`:**
-   - The `round()` function is used to round a floating-point number to a specified number of decimal places.
+    - The `round()` function is used to round a floating-point number to a specified number of decimal places.
 
-   ```python
-   num = 3.14159265
-   rounded_num = round(num, 2)  # Round to 2 decimal places
-   print(f"Rounded number: {rounded_num}")  # Output: 3.14
-   ```
+    ```python
+    num = 3.14159265
+    rounded_num = round(num, 2)  # Round to 2 decimal places
+    print(f"Rounded number: {rounded_num}")  # Output: 3.14
+    ```
 
 8. **`open()`:**
 
