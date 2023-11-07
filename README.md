@@ -194,55 +194,60 @@ Python includes a wide range of built-in functions that provide essential tools 
    ```
 
 8. **`open()`:**
-   - The `open()` function is used for file input and output. It's commonly used for reading and writing files.
 
-   ```python
-   # Writing to a file
-   with open("example.txt", "w") as file:
-       file.write("Hello, Python!")
+    - The `open()` function is used for file input and output. It's commonly used for reading and writing files.
 
-   # Reading from a file
-   with open("example.txt", "r") as file:
-       content = file.read()
-       print(content)  # Output: Hello, Python!
-   ```
+    ```python
+    # Writing to a file
+    with open("example.txt", "w") as file:
+        file.write("Hello, Python!")
 
-### 2. Operators:
+    # Reading from a file
+    with open("example.txt", "r") as file:
+        content = file.read()
+        print(content)  # Output: Hello, Python!
+    ```
 
-  - Operators are the building blocks of Python's expression and computation. We'll delve deep into the various categories of operators, starting with arithmetic operators (addition, subtraction, multiplication, division, etc.) for numerical operations.
-  - We'll explore comparison operators to evaluate and compare values, logical operators for decision-making, and bitwise operators for working at the binary level.
-  - Assignment operators will help you manipulate variables more efficiently, while identity and membership operators are essential for testing object identity and membership in sequences.
-  - Operator precedence ensures that expressions are evaluated in the correct order, and we'll cover how to use parentheses to control the order of evaluation. For advanced learners, we'll touch on operator overloading, which allows you to define custom behavior for operators in your own classes.
+### 2. Operators
+
+- Operators are the building blocks of Python's expression and computation. We'll delve deep into the various categories of operators, starting with arithmetic operators (addition, subtraction, multiplication, division, etc.) for numerical operations.
+- We'll explore comparison operators to evaluate and compare values, logical operators for decision-making, and bitwise operators for working at the binary level.
+- Assignment operators will help you manipulate variables more efficiently, while identity and membership operators are essential for testing object identity and membership in sequences.
+- Operator precedence ensures that expressions are evaluated in the correct order, and we'll cover how to use parentheses to control the order of evaluation. For advanced learners, we'll touch on operator overloading, which allows you to define custom behavior for operators in your own classes.
 
 **1. Arithmetic Operators:**
-   - **`+` (Addition):** Adds two numbers.
-   - **`-` (Subtraction):** Subtracts the right operand from the left operand.
-   - **`*` (Multiplication):** Multiplies two numbers.
-   - **`/` (Division):** Divides the left operand by the right operand, returning a float.
-   - **`//` (Integer Division):** Divides the left operand by the right operand, returning the integer part of the result.
-   - **`%` (Modulus):** Returns the remainder when the left operand is divided by the right operand.
-   - **`**` (Exponentiation):** Raises the left operand to the power of the right operand.
+
+- **`+` (Addition):** Adds two numbers.
+- **`-` (Subtraction):** Subtracts the right operand from the left operand.
+- **`*` (Multiplication):** Multiplies two numbers.
+- **`/` (Division):** Divides the left operand by the right operand, returning a float.
+- **`//` (Integer Division):** Divides the left operand by the right operand, returning the integer part of the result.
+- **`%` (Modulus):** Returns the remainder when the left operand is divided by the right operand.
+- **`**` (Exponentiation):** Raises the left operand to the power of the right operand.
 
 **2. Comparison Operators:**
-   - **`==` (Equal To):** Checks if two values are equal.
-   - **`!=` (Not Equal To):** Checks if two values are not equal.
-   - **`>` (Greater Than):** Checks if the left operand is greater than the right operand.
-   - **`<` (Less Than):** Checks if the left operand is less than the right operand.
-   - **`>=` (Greater Than or Equal To):** Checks if the left operand is greater than or equal to the right operand.
-   - **`<=` (Less Than or Equal To):** Checks if the left operand is less than or equal to the right operand.
+
+- **`==` (Equal To):** Checks if two values are equal.
+- **`!=` (Not Equal To):** Checks if two values are not equal.
+- **`>` (Greater Than):** Checks if the left operand is greater than the right operand.
+- **`<` (Less Than):** Checks if the left operand is less than the right operand.
+- **`>=` (Greater Than or Equal To):** Checks if the left operand is greater than or equal to the right operand.
+- **`<=` (Less Than or Equal To):** Checks if the left operand is less than or equal to the right operand.
 
 **3. Logical Operators:**
-   - **`and` (Logical AND):** Returns `True` if both operands are `True`.
-   - **`or` (Logical OR):** Returns `True` if at least one operand is `True`.
-   - **`not` (Logical NOT):** Negates the value of a Boolean expression.
+
+- **`and` (Logical AND):** Returns `True` if both operands are `True`.
+- **`or` (Logical OR):** Returns `True` if at least one operand is `True`.
+- **`not` (Logical NOT):** Negates the value of a Boolean expression.
 
 **4. Assignment Operators:**
-   - **`=` (Assignment):** Assigns a value to a variable.
-   - **`+=` (Add and Assign):** Adds the right operand to the left operand and assigns the result to the left operand.
-   - **`-=` (Subtract and Assign):** Subtracts the right operand from the left operand and assigns the result to the left operand.
-   - **`*=` (Multiply and Assign):** Multiplies the left operand by the right operand and assigns the result to the left operand.
-   - **`/=` (Divide and Assign):** Divides the left operand by the right operand and assigns the result to the left operand.
-   - **`%=` (Modulus and Assign):** Calculates the modulus of the left operand and assigns the result to the left operand.
+
+- **`=` (Assignment):** Assigns a value to a variable.
+- **`+=` (Add and Assign):** Adds the right operand to the left operand and assigns the result to the left operand.
+- **`-=` (Subtract and Assign):** Subtracts the right operand from the left operand and assigns the result to the left operand.
+- **`*=` (Multiply and Assign):** Multiplies the left operand by the right operand and assigns the result to the left operand.
+- **`/=` (Divide and Assign):** Divides the left operand by the right operand and assigns the result to the left operand.
+- **`%=` (Modulus and Assign):** Calculates the modulus of the left operand and assigns the result to the left operand.
 
 **5. Identity Operators:**
 
