@@ -2,30 +2,30 @@
 
 ## Agenda
 
-1. [Main Built-in Functions]()
+1. [Main Built-in Functions](https://github.com/romabak/devops_course/tree/python/lesson02#1-main-built-in-functions)
    - Python includes many built-in functions to make your life easier. We'll discuss some of the most commonly used ones, including `print()`, `input()`, `type()`, `sys.argv`, `del()`, `range()`, and `format()`.
 
-2. [Operators]()
+2. [Operators](https://github.com/romabak/devops_course/tree/python/lesson02#2-operators)
    - Operators are fundamental for performing operations on data in Python.
    - We'll explore various categories of operators, including arithmetic, comparison, logical, bitwise, assignment, identity, and membership operators.
    - Understanding operators is key to manipulating and working with data effectively in Python.
 
-3. [if/elif/else Statements]()
+3. [if/elif/else Statements](https://github.com/romabak/devops_course/tree/python/lesson02#3-ifelifelse-statements)
     - Introduction to conditional statements for decision-making in Python.
     - Syntax and usage of if, elif, and else statements.
     - Examples and practical applications.
 
-4. [for Loops and the `continue` Operator]()
+4. [for Loops and the `continue` Operator](https://github.com/romabak/devops_course/tree/python/lesson02#4-for-loops-and-the-continue-operator)
     - Using for loops to iterate over sequences and collections.
     - Utilizing the `range()` function to generate numerical sequences.
     - Understanding and applying the `continue` statemen
 
-5. [while Loops and the `break` Operator]()
+5. [while Loops and the `break` Operator](https://github.com/romabak/devops_course/tree/python/lesson02#4-for-loops-and-the-continue-operator)
     - Introduction to while loops for repetitive tasks.
     - Utilizing the `break` statement to exit a loop prematurely.
     - Examples and scenarios where while loops are useful.
 
-6. [Handling Exceptions]()
+6. [Handling Exceptions](https://github.com/romabak/devops_course/tree/python/lesson02#6-handling-exceptions)
     - Explain the concept of exceptions in Python and their importance in error handling.
     - Detail the structure of try, except, else, and finally blocks.
     - Demonstrate handling of common exceptions such as ValueError and FileNotFoundError.
@@ -451,7 +451,7 @@ print("city" not in person)  # Output: True
     print("Sum:", total)
     ```
 
-### 6. Handling Exceptions (Duration: 25 minutes)
+### 6. Handling Exceptions
 
 - Explain the concept of exceptions in Python and their importance in error handling.
 
@@ -488,4 +488,3 @@ print("city" not in person)  # Output: True
     except FileNotFoundError:
         print(f"File '{file_name}' not found.")
     ```
-
