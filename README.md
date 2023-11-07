@@ -245,16 +245,18 @@ Python includes a wide range of built-in functions that provide essential tools 
    - **`%=` (Modulus and Assign):** Calculates the modulus of the left operand and assigns the result to the left operand.
 
 **5. Identity Operators:**
-   - **`is` (Identity):** Checks if two variables refer to the same object.
-   - **`is not` (Not Identity):** Checks if two variables do not refer to the same object.
+
+- **`is` (Identity):** Checks if two variables refer to the same object.
+- **`is not` (Not Identity):** Checks if two variables do not refer to the same object.
 
 **7. Data structure operators**
 
 **7.1 List/String/Tuple Operators:**
-   - **`+` (Concatenation):** Combines two or more lists/strings/tuples into a new list/string/tuple.
-   - **`*` (Repetition):** Repeats a list/string/tuple a specified number of times.
-   - **`in` (Membership):** Checks if an element is present in the list/string/tuple.
-   - **`not in` (Not Membership):** Checks if an element is not present in the list/string/tuple.
+
+- **`+` (Concatenation):** Combines two or more lists/strings/tuples into a new list/string/tuple.
+- **`*` (Repetition):** Repeats a list/string/tuple a specified number of times.
+- **`in` (Membership):** Checks if an element is present in the list/string/tuple.
+- **`not in` (Not Membership):** Checks if an element is not present in the list/string/tuple.
 
 **Examples:**
 
@@ -308,12 +310,13 @@ print(tuple3)  # Output: (0, 0, 0, 0)
 ```
 
 **7.2 Set Operators:**
-   - **`|` (Union):** Combines two sets to create a new set containing all unique elements from both sets.
-   - **`&` (Intersection):** Creates a new set containing elements that are common to both sets.
-   - **`-` (Difference):** Creates a new set containing elements that are in the first set but not in the second.
-   - **`^` (Symmetric Difference):** Creates a new set containing elements that are in either of the sets but not in both.
-   - **`in` (Membership):** Checks if an element is present in the set.
-   - **`not in` (Not Membership):** Checks if an element is not present in the set.
+
+- **`|` (Union):** Combines two sets to create a new set containing all unique elements from both sets.
+- **`&` (Intersection):** Creates a new set containing elements that are common to both sets.
+- **`-` (Difference):** Creates a new set containing elements that are in the first set but not in the second.
+- **`^` (Symmetric Difference):** Creates a new set containing elements that are in either of the sets but not in both.
+- **`in` (Membership):** Checks if an element is present in the set.
+- **`not in` (Not Membership):** Checks if an element is not present in the set.
 
 - Union (`|`), Intersection (`&`), Difference (`-`), Symmetric Difference (`^`):
 
@@ -333,8 +336,9 @@ print("Symmetric Difference:", symmetric_difference_result)
 
 
 **7.3 Membership Operators:**
-   - **`in` (Membership):** Checks if a value is present in a sequence (e.g., a list, tuple, or string).
-   - **`not in` (Not Membership):** Checks if a value is not present in a sequence.
+
+- **`in` (Membership):** Checks if a value is present in a sequence (e.g., a list, tuple, or string).
+- **`not in` (Not Membership):** Checks if a value is not present in a sequence.
 
 - Membership (`in` and `not in`):
 
@@ -345,8 +349,9 @@ print("orange" not in fruits_set)  # Output: True
 ```
 
 **7.4 Dictionary Operators:**
-   - **`in` (Membership):** Checks if a key is present in the dictionary.
-   - **`not in` (Not Membership):** Checks if a key is not present in the dictionary.
+
+- **`in` (Membership):** Checks if a key is present in the dictionary.
+- **`not in` (Not Membership):** Checks if a key is not present in the dictionary.
 
 - Membership (`in` and `not in`):
 
@@ -361,31 +366,27 @@ print("city" not in person)  # Output: True
 - Introduce conditional statements in Python.
 - Explain the syntax of if, elif, and else statements.
 
-    Example:
-    ```python
-    age = 18
-    if age < 18:
-        print("You are a minor.")
-    elif age == 18:
-        print("You just turned 18.")
-    else:
-        print("You are an adult.")
-    ```
+Example:
 
-    - Provide examples to illustrate basic decision-making.
+```python
+age = 18
+if age < 18:
+    print("You are a minor.")
+elif age == 18:
+    print("You just turned 18.")
+else:
+    print("You are an adult.")
+```
 
-    Example:
-    ```python
-    temperature = 25
-    if temperature < 0:
-        print("It's freezing outside.")
-    elif temperature >= 0 and temperature < 20:
-        print("It's a bit chilly.")
-    else:
-        print("It's a nice day!")
-    ```
-
-    - Assign exercises for students to practice if/elif/else.
+```python
+temperature = 25
+if temperature < 0:
+    print("It's freezing outside.")
+elif temperature >= 0 and temperature < 20:
+    print("It's a bit chilly.")
+else:
+    print("It's a nice day!")
+```
 
 ### 4. for Loops and the `continue` Operator
 
@@ -428,8 +429,6 @@ print("city" not in person)  # Output: True
         count += 1
     ```
 
-- Explain how the `break` statement can be used to exit a loop prematurely.
-
     Example:
     ```python
     count = 1
@@ -439,8 +438,6 @@ print("city" not in person)  # Output: True
         print("This is iteration", count)
         count += 1
     ```
-
-- Provide real-world examples highlighting the utility of while loops.
 
     Example:
     ```python
@@ -490,3 +487,13 @@ print("city" not in person)  # Output: True
     except FileNotFoundError:
         print(f"File '{file_name}' not found.")
     ```
+
+**Homework Exercise:**
+
+1. Write a Python program that takes a user's input for their age and tells them if they are a child, a teenager, or an adult.
+
+2. Write a Python program that uses a for loop to print all odd numbers from 1 to 50, skipping even numbers.
+
+3. Write a Python program that asks the user to input numbers until they enter a negative number. Calculate and print the sum of all the positive numbers entered.
+
+4. Write a Python program that asks the user to input two numbers and performs division. Handle the ZeroDivisionError and ValueError exceptions gracefully, providing informative error messages.
