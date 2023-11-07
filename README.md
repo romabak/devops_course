@@ -4,14 +4,32 @@
 
 1. [Main Built-in Functions]()
    - Python includes many built-in functions to make your life easier. We'll discuss some of the most commonly used ones, including `print()`, `input()`, `type()`, `sys.argv`, `del()`, `range()`, and `format()`.
-   - These functions are essential for performing common tasks in Python.
 
 2. [Operators]()
    - Operators are fundamental for performing operations on data in Python.
    - We'll explore various categories of operators, including arithmetic, comparison, logical, bitwise, assignment, identity, and membership operators.
    - Understanding operators is key to manipulating and working with data effectively in Python.
 
-3. []
+3. [if/elif/else Statements]()
+    - Introduction to conditional statements for decision-making in Python.
+    - Syntax and usage of if, elif, and else statements.
+    - Examples and practical applications.
+
+4. [for Loops and the `continue` Operator]()
+    - Using for loops to iterate over sequences and collections.
+    - Utilizing the `range()` function to generate numerical sequences.
+    - Understanding and applying the `continue` statemen
+
+5. [while Loops and the `break` Operator]()
+    - Introduction to while loops for repetitive tasks.
+    - Utilizing the `break` statement to exit a loop prematurely.
+    - Examples and scenarios where while loops are useful.
+
+6. [Handling Exceptions]()
+    - Explain the concept of exceptions in Python and their importance in error handling.
+    - Detail the structure of try, except, else, and finally blocks.
+    - Demonstrate handling of common exceptions such as ValueError and FileNotFoundError.
+    - Guide students through practical exercises to gain hands-on experience with error handling.
 
 ## Lesson content
 
@@ -230,7 +248,7 @@ Python includes a wide range of built-in functions that provide essential tools 
 
 **7. Data structure operators**
 
-**7.1. List/String/Tuple Operators:**
+**7.1 List/String/Tuple Operators:**
    - **`+` (Concatenation):** Combines two or more lists/strings/tuples into a new list/string/tuple.
    - **`*` (Repetition):** Repeats a list/string/tuple a specified number of times.
    - **`in` (Membership):** Checks if an element is present in the list/string/tuple.
@@ -287,7 +305,7 @@ print(tuple3)  # Output: (0, 0, 0, 0)
 
 ```
 
-**7.2. Set Operators:**
+**7.2 Set Operators:**
    - **`|` (Union):** Combines two sets to create a new set containing all unique elements from both sets.
    - **`&` (Intersection):** Creates a new set containing elements that are common to both sets.
    - **`-` (Difference):** Creates a new set containing elements that are in the first set but not in the second.
@@ -312,7 +330,7 @@ print("Symmetric Difference:", symmetric_difference_result)
 ```
 
 
-**3. Membership Operators:**
+**7.3 Membership Operators:**
    - **`in` (Membership):** Checks if a value is present in a sequence (e.g., a list, tuple, or string).
    - **`not in` (Not Membership):** Checks if a value is not present in a sequence.
 
@@ -324,7 +342,7 @@ print("banana" in fruits_set)  # Output: True
 print("orange" not in fruits_set)  # Output: True
 ```
 
-**7.4. Dictionary Operators:**
+**7.4 Dictionary Operators:**
    - **`in` (Membership):** Checks if a key is present in the dictionary.
    - **`not in` (Not Membership):** Checks if a key is not present in the dictionary.
 
@@ -335,3 +353,139 @@ person = {"name": "Alice", "age": 30 }
 print("name" in person)  # Output: True
 print("city" not in person)  # Output: True
 ```
+
+### 3. if/elif/else Statements
+
+- Introduce conditional statements in Python.
+- Explain the syntax of if, elif, and else statements.
+
+    Example:
+    ```python
+    age = 18
+    if age < 18:
+        print("You are a minor.")
+    elif age == 18:
+        print("You just turned 18.")
+    else:
+        print("You are an adult.")
+    ```
+
+    - Provide examples to illustrate basic decision-making.
+
+    Example:
+    ```python
+    temperature = 25
+    if temperature < 0:
+        print("It's freezing outside.")
+    elif temperature >= 0 and temperature < 20:
+        print("It's a bit chilly.")
+    else:
+        print("It's a nice day!")
+    ```
+
+    - Assign exercises for students to practice if/elif/else.
+
+### 4. for Loops and the `continue` Operator
+
+- Introduce for loops for iterating over sequences and collections.
+
+    Example:
+    ```python
+    fruits = ["apple", "banana", "cherry"]
+    for fruit in fruits:
+        print(fruit)
+    ```
+
+- Explain the use of the `range()` function to create numerical sequences.
+
+    Example:
+    ```python
+    for i in range(1, 6):
+        print(i)
+    ```
+
+- Demonstrate the `continue` statement for skipping the current iteration.
+
+    Example:
+    ```python
+    for i in range(1, 11):
+        if i % 2 == 0:
+            continue
+        print(i)
+    ```
+
+### 5. while Loops and the `break` Operator
+
+- Introduce while loops for repetitive tasks in Python.
+
+    Example:
+    ```python
+    count = 1
+    while count <= 5:
+        print("This is iteration", count)
+        count += 1
+    ```
+
+- Explain how the `break` statement can be used to exit a loop prematurely.
+
+    Example:
+    ```python
+    count = 1
+    while True:
+        if count > 5:
+            break
+        print("This is iteration", count)
+        count += 1
+    ```
+
+- Provide real-world examples highlighting the utility of while loops.
+
+    Example:
+    ```python
+    total = 0
+    while True:
+        num = int(input("Enter a number (0 to stop): "))
+        if num == 0:
+            break
+        total += num
+    print("Sum:", total)
+    ```
+
+### 6. Handling Exceptions (Duration: 25 minutes)
+
+- Explain the concept of exceptions in Python and their importance in error handling.
+
+    Example:
+    ```python
+    try:
+        result = 10 / 0
+    except ZeroDivisionError:
+        print("Division by zero is not allowed.")
+    ```
+
+- Detail the structure of try, except, else, and finally blocks.
+
+    Example:
+    ```python
+    try:
+        num = int(input("Enter a number: "))
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+    else:
+        print("You entered:", num)
+    finally:
+        print("Execution completed.")
+    ```
+
+- Demonstrate handling of common exceptions.
+
+    Example:
+    ```python
+    file_name = "non_existent_file.txt"
+    try:
+        with open(file_name, 'r') as file:
+            content = file.read()
+    except FileNotFoundError:
+        print(f"File '{file_name}' not found.")
+    ```
+
