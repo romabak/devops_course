@@ -114,6 +114,8 @@ Python includes a wide range of built-in functions that provide essential tools 
    name = "Alice"
    age = 30
    formatted_string = "My name is {} and I am {} years old.".format(name, age)
+   formatted_string = "My name is {name} and I am {age} years old.".format(age=30, name="Alice")
+   formatted_string = "My name is {0} and I am {1} years old.".format(name, age)
    print(formatted_string)
    ```
 
