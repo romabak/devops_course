@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-def my_function():
-  pass  # Placeholder, no actual code here yet
+import os
 
-my_function()
+print(__file__)
+
+dirname = os.path.dirname(__file__)
+
+print(dirname)

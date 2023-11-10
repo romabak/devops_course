@@ -391,3 +391,139 @@ Using docstrings to document your code is considered good programming practice, 
 - **Testing and Debugging**: The `pass` statement can also be temporarily inserted for testing or debugging purposes. It can help you bypass a particular section of code to observe the behavior of the rest of the program.
 
 While the `pass` statement is useful for creating code structures, it should be used sparingly and should ideally be accompanied by comments or docstrings that explain the purpose of the placeholder. It is crucial to ensure that you eventually replace the `pass` statements with the actual code to implement the intended functionality.
+
+### 12. Recursion
+
+   Recursion is a programming technique in which a function calls itself to solve a problem. It's a powerful and elegant approach to solving problems that have a recursive structure. Here are some key points to consider:
+
+   - **Recursive Functions**: Recursive functions are functions that call themselves as part of their operation.
+
+   - **Base Case**: To avoid infinite recursion, a recursive function must have a base case. The base case is a condition under which the function stops calling itself and returns a value.
+
+   - **Divide and Conquer**: Recursion often involves dividing a problem into smaller, similar subproblems, solving each subproblem recursively, and then combining the results to solve the original problem.
+
+   - **Examples**: Recursion is commonly used for tasks like computing factorials, calculating Fibonacci numbers, traversing trees and graphs, and solving certain mathematical problems.
+
+   **Code Example - Calculating Factorial Recursively**:
+
+   ```python
+   def factorial(n):
+       """
+       Calculate the factorial of a number using recursion.
+       :param n: The number for which to calculate the factorial.
+       :return: The factorial of n.
+       """
+       if n == 0:
+           return 1  # Base case
+       else:
+           return n * factorial(n - 1)  # Recursive case
+
+   result = factorial(5)
+   ```
+
+   In this example:
+   - The `factorial` function calculates the factorial of a number using recursion.
+   - It has a base case where `n` is checked, and if `n` is 0, the function returns 1 to stop the recursion.
+   - In the recursive case, the function calls itself with `n - 1` and multiplies the result by `n`.
+
+Recursion is a powerful technique, but it should be used with care to avoid infinite recursion. It's particularly useful for problems that can be naturally divided into smaller, similar subproblems.
+
+### 13. Lambda Functions
+
+   In Python, lambda functions, also known as anonymous functions, are small, inline functions that can be used for simple operations. Here are some key points to consider:
+
+   - **Anonymous Functions**: Lambda functions are anonymous, meaning they don't have a name like regular functions.
+
+   - **Syntax**: The syntax of a lambda function is `lambda arguments: expression`, where `arguments` are the input parameters, and `expression` is the operation to be performed.
+
+   - **Single Expression**: Lambda functions are best suited for single expressions and simple operations. They are often used where a small, temporary function is needed for a short operation.
+
+   - **Usage**: Lambda functions are commonly used with functions that accept other functions as arguments, such as `map()`, `filter()`, and `sorted()`.
+
+   **Code Example - Using Lambda with `sorted()`**:
+
+   ```python
+   names = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+   # Sorting names based on their length using a lambda function
+   sorted_names = sorted(names, key=lambda x: len(x))
+   ```
+
+   In this example:
+   - A list of names is defined.
+   - The `sorted()` function is used to sort the names based on their length.
+   - A lambda function is provided as the `key` argument, which calculates the length of each name.
+
+Lambda functions are a convenient way to create small, throwaway functions for simple tasks, especially in situations where a full function definition would be excessive. They're commonly used in functional programming and for operations that can be expressed in a single expression.
+
+#### 14. Importing Modules
+
+In Python, modules are collections of Python code that can be reused in different programs. Importing modules allows you to access functions, variables, and classes defined in those modules. Here are some key points to consider:
+
+- **Module Import**: To use the functionality of a module, you import it using the `import` keyword followed by the module's name.
+
+- **Standard Library**: Python comes with a rich standard library, which includes many modules for common tasks like working with files, data, and more.
+
+- **Third-Party Modules**: You can also install and use third-party modules created by the Python community to extend Python's capabilities.
+
+- **Namespace**: When you import a module, it creates a namespace for that module, allowing you to access its contents using dot notation.
+
+```python
+import os
+
+# Get the current working directory
+current_directory = os.getcwd()
+
+# List files and directories in the current directory
+files_and_directories = os.listdir(current_directory)
+
+# Create a new directory
+new_directory_name = "my_new_directory"
+os.mkdir(new_directory_name)
+
+# Rename the new directory
+new_directory_name_renamed = "my_renamed_directory"
+os.rename(new_directory_name, new_directory_name_renamed)
+```
+
+In this example:
+- The `os` module is imported to work with file and directory operations.
+- We get the current working directory using `os.getcwd()`.
+- `os.listdir()` is used to list the files and directories in the current directory.
+- We create a new directory using `os.mkdir()`.
+- The new directory is renamed using `os.rename()`.
+
+**Code Example - Importing a Custom Python File**:
+
+Assuming you have a custom Python file named `my_module.py` with the following content:
+
+```python
+# my_module.py
+
+def greet(name):
+    return f"Hello, {name}!"
+
+def square(x):
+    return x * x
+```
+
+You can import and use functions from this custom file in another Python script as follows:
+
+```python
+# main_script.py
+import my_module  # Import the custom Python file
+
+# Use functions from the custom module
+message = my_module.greet("Alice")
+print(message)
+
+result = my_module.square(5)
+print(f"The square of 5 is {result}")
+```
+
+In this example:
+- `my_module.py` defines two functions, `greet()` and `square()`.
+- `main_script.py` imports the `my_module` custom Python file using the `import` statement.
+- The functions from `my_module` are then called and used in the `main_script.py`.
+
+This demonstrates how you can import functions from your custom Python files to reuse code and keep your code organized.
