@@ -2,64 +2,51 @@
 
 ### Agenda:
 
-1. [**Defining a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#1-defining-a-function)
-   - The structure of a function
-   - Naming conventions and best practices
-   - Docstrings for documentation
+1. [**Function Basics**](https://github.com/romabak/devops_course/tree/python/lesson003#1-function-basics)
+    - Defining a Function
+    - Creating a Function
+    - Calling a Function
+    - Return Values
+    - Code Example
 
-2. [**Creating a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#2-creating-a-function)
-   - The purpose of functions
-   - Encapsulating code for reusability
-   - Organizing code and enhancing readability
-   - Benefits of modular programming
-
-3. [**Calling a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#3-calling-a-function)
-   - Invoking a function with arguments
-   - Capturing return values
-   - Function composition for complex tasks
-
-4. [**Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#4-arguments)
+2. [**Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#2-arguments)
    - Various data types as function arguments
    - Multiple parameters in function definitions
 
-5. [**Parameters or Arguments?**](https://github.com/romabak/devops_course/tree/python/lesson003#5-parameters-or-arguments?)
+3. [**Parameters or Arguments?**](https://github.com/romabak/devops_course/tree/python/lesson003#3-parameters-or-arguments?)
    - Understanding the distinction between parameters and arguments
 
-6. [**Number of Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#6-number-of-arguments)
+4. [**Number of Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#4-number-of-arguments)
    - Fixed-arity vs. variable-arity functions
    - The flexibility of *args for variable-arity
 
-7. [**Arbitrary Arguments, \*args**](https://github.com/romabak/devops_course/tree/python/lesson03#7-arbitrary-arguments-args)
+5. [**Arbitrary Arguments, \*args**](https://github.com/romabak/devops_course/tree/python/lesson03#5-arbitrary-arguments-args)
    - Using *args to accept an arbitrary number of positional arguments
    - Iterating through *args for processing
 
-8. [**Keyword Arguments**](https://github.com/romabak/devops_course/tree/python/lesson03#8-keyword-arguments)
+6. [**Keyword Arguments**](https://github.com/romabak/devops_course/tree/python/lesson03#6-keyword-arguments)
    - Enhancing readability with keyword arguments
    - Specifying parameter names when calling functions
 
-9. [**Arbitrary Keyword Arguments, \*\*kwargs**](https://github.com/romabak/devops_course/tree/python/lesson03#9-arbitrary-keyword-arguments-kwargs)
+7. [**Arbitrary Keyword Arguments, \*\*kwargs**](https://github.com/romabak/devops_course/tree/python/lesson03#7-arbitrary-keyword-arguments-kwargs)
    - Accepting an arbitrary number of keyword arguments with **kwargs
    - Iterating through **kwargs for processing
 
-10. [**Default Parameter Value**](https://github.com/romabak/devops_course/tree/python/lesson03#10-default-parameter-value)
+8. [**Default Parameter Value**](https://github.com/romabak/devops_course/tree/python/lesson03#8-default-parameter-value)
     - Setting default values for function parameters
     - Providing reasonable defaults for optional parameters
 
-11. [**Passing a List as an Argument**](https://github.com/romabak/devops_course/tree/python/lesson03#11-passing-a-list-as-an-argument)
+9. [**Passing a List as an Argument**](https://github.com/romabak/devops_course/tree/python/lesson03#9-passing-a-list-as-an-argument)
     - Working with lists as function arguments
     - Processing collections of data within functions
 
-12. [**Return Values**](https://github.com/romabak/devops_course/tree/python/lesson03#12-return-values)
-    - Providing results or data from functions
-    - Capturing return values for use in the calling code
-
-13. [**Docstrings in Python Functions**](https://github.com/romabak/devops_course/tree/python/lesson03#13-docstrings)
+10. [**Docstrings**](https://github.com/romabak/devops_course/tree/python/lesson03#10-docstrings)
     - Purpose of docstrings for documentation
     - Location and content of docstrings
     - Benefits of self-documenting code
     - Accessing docstrings with `__doc__`
 
-14. [**The `pass` Statement**](https://github.com/romabak/devops_course/tree/python/lesson03#14-pass-statement)
+11. [**The `pass` Statement**](https://github.com/romabak/devops_course/tree/python/lesson03#11-pass-statement)
     - Placeholder for future code or documentation
     - Maintaining code structure and indentation
     - Temporary use for testing and debugging
@@ -67,99 +54,47 @@
 
 ## Lesson Content
 
-### 1. Defining a Function
+### 1. Function Basics
 
-   When defining a function in Python, you need to adhere to a specific structure:
+**Defining a Function**
+- Functions in Python are defined using the `def` keyword, followed by a function name, parentheses for parameters, and a colon.
+- It is recommended to include a docstring that describes the function's purpose, parameters, and return values.
 
-   - **Function Definition**: Start with the `def` keyword, followed by the function name. The function name should follow Python's naming conventions (lowercase with words separated by underscores). It should be clear and descriptive of the function's purpose.
+**Creating a Function**
+- Functions encapsulate a block of code for reuse, promoting reusability, code organization, readability, and maintenance.
+- Use meaningful names and clear docstrings to convey the function's purpose.
+- Functions can perform various operations, calculations, or tasks.
 
-   - **Parameters**: Within the parentheses, you list the parameters the function expects. These parameters are placeholders for values that will be passed to the function when it's called. You can have zero or more parameters.
+**Calling a Function**
+- To execute a function, call it by its name, followed by parentheses, and pass arguments (values) to the function's parameters.
+- Functions can return values, which can be captured by assigning the result to a variable.
+- Function composition involves using multiple functions to solve complex problems.
 
-   - **Colon**: The colon (`:`) signifies the end of the function definition line and the beginning of the function's code block.
+**Return Values**
+- Return values in functions allow you to obtain results or data from a function's execution.
+- The `return` statement specifies the value to be returned to the caller.
+- Capturing return values is essential for using the results of calculations, data processing, or other functions.
 
-   - **Code Block**: The code block, indented under the function definition, contains the statements and operations that the function performs.
+**Code Example**:
 
-   **Code Example:**
+```python
+def add(a, b):
+    """
+    Add two numbers and return the result.
+    :param a: The first number.
+    :param b: The second number.
+    :return: The sum of a and b.
+    """
+    return a + b
 
-   ```python
-   def greet(name):
-       """
-       This function greets the person passed in as a parameter.
-       :param name: The name of the person to greet.
-       """
-       print(f"Hello, {name}!")
-   ```
+# Calling the add function and capturing the return value
+result = add(3, 5)
+print(f"The sum is {result}")
+```
 
-   In this example:
-   - We defined a function called `greet`.
-   - It takes one parameter named `name`.
-   - The docstring provides documentation describing what the function does and the purpose of the `name` parameter.
-   - Inside the function, it prints a greeting message using the provided `name`.
+Understanding these fundamental concepts is key to using functions effectively in Python for code organization, reusability, and modular programming.
 
-   Defining functions with meaningful names and clear documentation is essential for writing maintainable code. This makes it easier for you and other developers to understand the purpose of the function and how to use it.
-
-### 2. Creating a Function
-
-   Creating a function is all about encapsulating a block of code to make it reusable. Functions are a fundamental building block of modular programming. Here are some key points to consider:
-
-   - **Reusability**: Functions allow you to define a block of code that can be used multiple times with different inputs. This promotes code reusability and avoids duplicating the same code in multiple places.
-
-   - **Organization**: Functions help organize your code. By breaking your program into smaller functions, you can compartmentalize different tasks, making your codebase easier to manage.
-
-   - **Readability**: Code readability is enhanced when you use functions. Well-named functions with clear purposes improve the understanding of the code.
-
-   - **Maintenance**: Functions make your code easier to maintain. If you need to make a change, you can update the function in one place, and the change will affect all instances where the function is used.
-
-   **Code Example:**
-
-   ```python
-   def calculate_square_area(side_length):
-       """
-       Calculate the area of a square.
-       :param side_length: The length of one side of the square.
-       :return: The area of the square.
-       """
-       return side_length * side_length
-   ```
-
-   In this example:
-   - We created a function called `calculate_square_area`.
-   - It takes one parameter, `side_length`.
-   - The function calculates the area of a square using the provided side length and returns the result.
-
-   By encapsulating this calculation within a function, you can easily reuse it for different squares in your program, improving code reusability and maintainability.
-
-### 3. Calling a Function
-
-   Calling a function is the process of executing it with specific arguments. When you call a function, the code within the function's code block is executed, and you can capture the return value if the function provides one. Here are some key points to consider:
-
-   - **Function Name**: To call a function, you use its name followed by parentheses, like this: `function_name()`.
-
-   - **Arguments**: If the function requires arguments, you provide them within the parentheses. These arguments are the values that the function will work with.
-
-   - **Return Value**: If the function returns a value, you can capture it by assigning the function call to a variable.
-
-   **Code Example:**
-
-   ```python
-   def greet(name):
-       """
-       This function greets the person passed in as a parameter.
-       :param name: The name of the person to greet.
-       """
-       print(f"Hello, {name}!")
-
-   # Calling the function with an argument
-   greet("Alice")
-   ```
-
-   In this example:
-   - We call the `greet` function with the argument `"Alice"`.
-   - The function executes and prints the greeting message for Alice.
-
-   You can call functions with different arguments, allowing you to perform the same task with different data, which is one of the key benefits of functions.
-
-### 4. Arguments
+### 2. Arguments
 
    Function arguments can include various data types, including integers, floats, strings, lists, dictionaries, and even other functions.
 
@@ -171,7 +106,7 @@
    result = greet("Alice", 30)
    ```
 
-### 5. Parameters or Arguments?
+### 3. Parameters or Arguments?
 
    Understanding the distinction between parameters and arguments is fundamental when working with functions. These terms are often used interchangeably, but they have distinct meanings:
 
@@ -201,7 +136,7 @@
 
    Understanding the distinction between parameters and arguments is crucial when discussing how functions work and when communicating about function behavior with others.
 
-### 6. Number of Arguments
+### 4. Number of Arguments
 
    Functions in Python can have different numbers of arguments depending on how they are defined. Python supports variable-arity functions, allowing you to create functions that accept varying numbers of arguments. Here are some key points to consider:
 
@@ -234,7 +169,7 @@
 
    Variable-arity functions are useful when you want to create functions that can handle different numbers of arguments without explicitly defining them. This can simplify your code and make it more versatile.
 
-### 7. Arbitrary Arguments, *args
+### 5. Arbitrary Arguments, *args
 
    In Python, you can create variable-arity functions using the `*args` syntax. This feature allows you to accept an arbitrary number of positional arguments within a function. Here are some key points to consider:
 
@@ -266,7 +201,7 @@
 
    Variable-arity functions with `*args` are helpful when you want to create functions that can handle different numbers of positional arguments without specifying them individually in the function definition.
 
-### 8. Keyword Arguments
+### 6. Keyword Arguments
 
    Keyword arguments in Python provide a way to call functions by specifying parameter names and their corresponding values. This enhances code clarity, making it easy to understand which value corresponds to which parameter. Here are some key points to consider:
 
@@ -297,7 +232,7 @@
 
    Keyword arguments enhance the clarity of function calls, making it easier to understand the purpose of each argument and the role it plays in the function.
 
-### 9. Arbitrary Keyword Arguments, **kwargs
+### 7. Arbitrary Keyword Arguments, **kwargs
 
    In Python, you can create functions that accept an arbitrary number of keyword arguments using the `**kwargs` syntax. This powerful feature allows you to work with an unspecified number of named parameters, enhancing the versatility of your functions. Here are some key points to consider:
 
@@ -327,7 +262,7 @@
 
 Certainly! Let's explore part 10 in more detail:
 
-### 10. Default Parameter Value
+### 8. Default Parameter Value
 
    In Python, you can set default values for function parameters. This means that if a caller doesn't provide an argument for a particular parameter, the default value will be used instead. Here are some key points to consider:
 
@@ -361,7 +296,7 @@ Certainly! Let's explore part 10 in more detail:
 
 Certainly! Let's explore part 11 in more detail:
 
-### 11. Passing a List as an Argument
+### 9. Passing a List as an Argument
 
 Python functions can accept various data types as arguments, including lists. Passing a list as an argument allows you to work with collections of data within the function. Here are some key points to consider:
 
@@ -394,39 +329,7 @@ In this example:
 
 Passing lists as arguments allows you to work with collections of data and perform various operations on them within your functions.
 
-### 12. Return Values
-
-Return values in Python functions allow you to obtain results or data from a function's execution. When a function has a return statement, it can provide a value that can be used in the calling code. Here are some key points to consider:
-
-- **Return Statement**: You use the `return` statement to specify the value or values that the function should provide back to the caller.
-
-- **Capturing Return Values**: When you call a function that returns a value, you can capture that value by assigning it to a variable.
-
-   **Code Example:**
-
-   ```python
-   def multiply(a, b):
-       """
-       Multiply two numbers and return the result.
-       :param a: The first number.
-       :param b: The second number.
-       :return: The product of a and b.
-       """
-       return a * b
-
-   result = multiply(3, 4)
-   print("The result is:", result)
-   ```
-
-In this example:
-
-- The `multiply` function multiplies two numbers, `a` and `b`, and returns the result using the `return` statement.
-- When we call the function with the arguments `3` and `4`, the result is captured in the `result` variable.
-- We then print the result, which is "The result is: 12."
-
-   Return values are essential for functions that perform calculations, generate data, or produce any kind of output that the calling code needs to use.
-
-### 13. Docstrings
+### 10. Docstrings
 
 - **Purpose**: Docstrings are used to describe the purpose, usage, and behavior of a function. They provide essential information to both developers who are writing the code and those who may use the function in the future.
 
@@ -468,7 +371,7 @@ In this example, the docstring provides information about the function's purpose
 
 Using docstrings to document your code is considered good programming practice, as it promotes code understanding, maintainability, and collaboration among developers.
 
-### 14. pass statement
+### 11. pass statement
 
 - **Placeholder**: The primary use of the `pass` statement is as a placeholder where syntactically some code is required, but you don't want to execute any specific instructions. For example, when you're defining a function, class, or control structure (like an `if` statement or a loop) and haven't implemented the actual code yet, you can use `pass` to indicate that you're deferring the implementation to a later time. This is especially useful when you're in the process of writing code and want to outline the structure before filling in the details.
 
