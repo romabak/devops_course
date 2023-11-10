@@ -2,30 +2,30 @@
 
 ### Agenda:
 
-1. [**Defining a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#defining-a-function)
+1. [**Defining a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#1-defining-a-function)
    - The structure of a function
    - Naming conventions and best practices
    - Docstrings for documentation
 
-2. [**Creating a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#creating-a-function)
+2. [**Creating a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#2-creating-a-function)
    - The purpose of functions
    - Encapsulating code for reusability
    - Organizing code and enhancing readability
    - Benefits of modular programming
 
-3. [**Calling a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#calling-a-function)
+3. [**Calling a Function**](https://github.com/romabak/devops_course/tree/python/lesson003#3-calling-a-function)
    - Invoking a function with arguments
    - Capturing return values
    - Function composition for complex tasks
 
-4. [**Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#arguments)
+4. [**Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#4-arguments)
    - Various data types as function arguments
    - Multiple parameters in function definitions
 
-5. [**Parameters or Arguments?**](https://github.com/romabak/devops_course/tree/python/lesson003#parameters-or-arguments?)
+5. [**Parameters or Arguments?**](https://github.com/romabak/devops_course/tree/python/lesson003#5-parameters-or-arguments?)
    - Understanding the distinction between parameters and arguments
 
-6. [**Number of Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#number-of-arguments)
+6. [**Number of Arguments**](https://github.com/romabak/devops_course/tree/python/lesson003#6-number-of-arguments)
    - Fixed-arity vs. variable-arity functions
    - The flexibility of *args for variable-arity
 
