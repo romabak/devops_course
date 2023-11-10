@@ -29,37 +29,37 @@
    - Fixed-arity vs. variable-arity functions
    - The flexibility of *args for variable-arity
 
-7. [**Arbitrary Arguments, \*args**](https://github.com/romabak/devops_course/tree/python/lesson003#arbitrary-arguments-\*args)
+7. [**Arbitrary Arguments, \*args**](https://github.com/romabak/devops_course/tree/python/lesson03#7-arbitrary-arguments-args)
    - Using *args to accept an arbitrary number of positional arguments
    - Iterating through *args for processing
 
-8. [**Keyword Arguments**]()
+8. [**Keyword Arguments**](https://github.com/romabak/devops_course/tree/python/lesson03#8-keyword-arguments)
    - Enhancing readability with keyword arguments
    - Specifying parameter names when calling functions
 
-9. [**Arbitrary Keyword Arguments, \*\*kwargs**]()
+9. [**Arbitrary Keyword Arguments, \*\*kwargs**](https://github.com/romabak/devops_course/tree/python/lesson03#9-arbitrary-keyword-arguments-kwargs)
    - Accepting an arbitrary number of keyword arguments with **kwargs
    - Iterating through **kwargs for processing
 
-10. [**Default Parameter Value**]()
+10. [**Default Parameter Value**](https://github.com/romabak/devops_course/tree/python/lesson03#10-default-parameter-value)
     - Setting default values for function parameters
     - Providing reasonable defaults for optional parameters
 
-11. [**Passing a List as an Argument**]()
+11. [**Passing a List as an Argument**](https://github.com/romabak/devops_course/tree/python/lesson03#11-passing-a-list-as-an-argument)
     - Working with lists as function arguments
     - Processing collections of data within functions
 
-12. [**Return Values**]()
+12. [**Return Values**](https://github.com/romabak/devops_course/tree/python/lesson03#12-return-values)
     - Providing results or data from functions
     - Capturing return values for use in the calling code
 
-13. [**Docstrings in Python Functions**]()
+13. [**Docstrings in Python Functions**](https://github.com/romabak/devops_course/tree/python/lesson03#13-docstrings)
     - Purpose of docstrings for documentation
     - Location and content of docstrings
     - Benefits of self-documenting code
     - Accessing docstrings with `__doc__`
 
-14. [**The `pass` Statement**]()
+14. [**The `pass` Statement**](https://github.com/romabak/devops_course/tree/python/lesson03#14-pass-statement)
     - Placeholder for future code or documentation
     - Maintaining code structure and indentation
     - Temporary use for testing and debugging
