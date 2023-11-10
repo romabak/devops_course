@@ -33,7 +33,7 @@
 
 ## Lesson content
 
-### 1. Main Built-in Functions:
+### 1. Main Built-in Functions
 
 Python includes a wide range of built-in functions that provide essential tools for various programming tasks. In this section, we'll introduce some of the most commonly used built-in functions and demonstrate how to use them effectively.
 
