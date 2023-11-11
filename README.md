@@ -52,6 +52,29 @@
     - Temporary use for testing and debugging
     - Best practices for using `pass`
 
+12. [**Recursion**](https://github.com/romabak/devops_course/tree/python/lesson03#12-recursion)
+    - Using Recursive Functions
+    - Defining Base Cases
+    - Divide and Conquer Approach
+    - Recursive Examples
+
+13.[**Lambda Functions**](https://github.com/romabak/devops_course/tree/python/lesson03#13-lambda-functions)
+    - Understanding Lambda Functions
+    - Syntax and Usage
+    - Use Cases with `map()`, `filter()`, and More
+
+14. [**Importing Modules**](https://github.com/romabak/devops_course/tree/python/lesson03#14-importing-modules)
+    - Using Modules for Code Reusability
+    - Importing Standard Library Modules
+    - Utilizing Third-Party Modules
+    - Namespace and Dot Notation
+    - Custom Python Files
+
+15. [**Decorators**](https://github.com/romabak/devops_course/tree/python/lesson03#15-decorators)
+    - Decorator Function
+    - Syntax
+    - Common Use Cases
+
 ## Lesson Content
 
 ### 1. Function Basics
@@ -456,7 +479,7 @@ Recursion is a powerful technique, but it should be used with care to avoid infi
 
 Lambda functions are a convenient way to create small, throwaway functions for simple tasks, especially in situations where a full function definition would be excessive. They're commonly used in functional programming and for operations that can be expressed in a single expression.
 
-#### 14. Importing Modules
+### 14. Importing Modules
 
 In Python, modules are collections of Python code that can be reused in different programs. Importing modules allows you to access functions, variables, and classes defined in those modules. Here are some key points to consider:
 
@@ -527,3 +550,37 @@ In this example:
 - The functions from `my_module` are then called and used in the `main_script.py`.
 
 This demonstrates how you can import functions from your custom Python files to reuse code and keep your code organized.
+
+### 15. Decorators
+
+   In Python, decorators are a powerful way to modify or enhance the behavior of functions or methods without changing their source code. Decorators are often used for tasks like logging, authentication, and access control. Here are some key points to consider:
+
+   - **Decorator Function**: A decorator is a function that takes another function as an argument and returns a new function that usually extends or modifies the behavior of the original function.
+
+   - **Syntax**: Decorators are typically applied using the `@decorator_function` syntax just above the function definition.
+
+   - **Common Use Cases**: Decorators can be used for tasks like adding logging, authentication checks, caching, and more to existing functions.
+
+   **Code Example - Creating a Simple Decorator**:
+
+   ```python
+   def my_decorator(func):
+       def wrapper():
+           print("Something is happening before the function is called.")
+           func()
+           print("Something is happening after the function is called.")
+       return wrapper
+
+   @my_decorator
+   def say_hello():
+       print("Hello!")
+
+   say_hello()
+   ```
+
+   In this example:
+   - The `my_decorator` function takes another function, `func`, and returns a new function, `wrapper`, that adds behavior before and after the original function.
+   - The `@my_decorator` decorator is applied to the `say_hello` function, enhancing its behavior.
+   - When `say_hello()` is called, it includes the behavior added by the decorator.
+
+Decorators provide a clean and reusable way to modify the behavior of functions or methods, making them a valuable tool in Python for aspects like code organization and adding additional functionality to existing code.
